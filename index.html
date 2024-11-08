@@ -8,7 +8,7 @@
 </head>
 
 
-<body>
+<body class="main-content light-mode">
     <nav> 
         <ul>
             <li><a href="#home">Home</a></li>
@@ -18,8 +18,14 @@
         </ul>
     </nav>
     
+
     <div id="home"> 
-        <h2></h2>
+        <h2>Welcome! My name is <span class="yellow">Leeda Sea.</span></h2>
+    </div>
+
+
+    <div id="headshot">
+        <img src="photo2.jpg" alt="photo of myself" height="150px">
     </div>
 
     <div id="aboutme" class="about">
@@ -29,31 +35,41 @@
             Feel free to take a look around!</p>
     </div>
     
-    <div id="headshot">
-        <img src="photo2.jpg" alt="photo of myself" height="150px">
-    </div>
+
+
 
     <div id="mywork" class="work">
         <h2>My Work</h2>
-        <a href="https://github.com/leedle20" target="_blank">GitHub Profile</a>
+        <p>Check out my GitHub and LinkedIn profiles!</p>
+       <div class="row">
+        <div class="column">
+        <a href="https://github.com/leedle20" target="_blank">
+            <img class='links' src="GitHub-Logo.png" height="50px"/>
+        </a>
+    </div>
         <br/>
-        <a href="https://www.linkedin.com/in/leeda-sea/" target="_blank">LinkedIn Profile</a>
-    
+    <div class="column">
+        <a href="https://www.linkedin.com/in/leeda-sea/" target="_blank">
+            <img class='links' src="LinkedIn-Logo.png" height="30px"> </a>
+        </div>
+    </div>
     </div>
     
-<br>
+
+    <section id="projects">
+
 
     <div class="grid-container">
         <div class="grid-item">Project 1</div>
         <div class="grid-item">Project 2</div>
         <div class="grid-item">Project 3</div>  
       </div>
-
+    </section>
 
     <div id="contactme" class="contact">
         <h2>Contact</h2>
 
-        <p>Don't hesitate to reach out to me at sea.leeda@gmail.com or 
+        <p>Don't hesitate to reach out to me at <span class="yellow">sea.leeda@gmail.com</span> or 
             submit a message through the form below if you have any questions or want to get in touch.</p>
 
         <form method="post" action="http://server1">
@@ -80,8 +96,11 @@
 <br>
 <br>
 
-<footer>
-Last updated: October 2024
+<footer class="footer">
+    <br>
+    Designed and Developed by
+    Leeda Sea © 2024
+    <br>  <br>
 
 </footer>
 

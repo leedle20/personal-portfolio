@@ -1,7 +1,6 @@
 body{
-    background-color: #e1efd9;
+    background-color: #ffffff;
 }
-
 
 ul {
   list-style-type: none;
@@ -24,27 +23,64 @@ li a {
   font-family: "Georgia", serif;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #ad3838;
+  background-color: #d79207;
+}
+
+#home {
+  padding-top:20px;
+  padding-bottom:10px;
 }
 
 
+.yellow{
+  color:rgb(203, 159, 13);
+}
 
 .about{
   font-family: "Georgia", serif;
 }
 
-.work{
-  font-family: "Georgia", serif;
+#aboutme {
+  padding-bottom: 50px
+}
+
+
+#headshot{
+    float: left;
+    margin: 10px;
+    padding-right: 20px;
 }
 
 
 
+.work{
+  font-family: "Georgia", serif;
+
+}
+
+.row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+
+#projects{
+  background-color: rgb(224, 240, 230);
+  padding: 50px 0px 50px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 250px 250px 250px;
-    background-color: #157241;
+    background-color: rgb(224, 240, 230);
     padding: 10px;
     width: 800px;
     height: 100px;
@@ -52,7 +88,7 @@ li a:hover {
   }
 .grid-item {
     background-color: #fffaf5;
-    border: 1px solid #157241;
+    border: 2px solid #16894c;
     padding: 20px;
     font-size: 20px;
     text-align: center;
@@ -63,14 +99,36 @@ li a:hover {
   
   .grid-item:hover {
     background-color: #fffaf5;
-    width: 250px;
-    height: 70px;
     text-align: center;
     justify-content: space-between;
+    border:1px #16894c
   }
+
+  @media screen and (max-width: 1200px) {
+    .grid-container {
+    grid-template-columns: 1fr 1fr;
+    }
+    #projects{
+      background-color: rgb(224, 240, 230);
+      padding: 50px 0px 75px;
+    }
+    }
+
+  @media screen and (max-width: 900px) {
+  .grid-container {
+  grid-template-columns: 1fr;
+  }
+  #projects{
+    background-color: rgb(224, 240, 230);
+    padding: 50px 0px 150px;
+  }
+  }
+
 
 .contact{
   font-family: "Georgia", serif;
+  padding-top: 75px;
+  line-height: 25px;
 }
 
 
@@ -79,3 +137,13 @@ li a:hover {
     height: 100px;
     width: 400px;
     }
+
+
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #157241;
+  color: white;
+  text-align: center;
+}
